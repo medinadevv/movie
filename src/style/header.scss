@@ -1,0 +1,76 @@
+
+#header {
+  //background: #102746;
+position: sticky;
+  top: 0;
+  backdrop-filter: blur(5px);
+  z-index: 99;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &--title {
+      color: red;
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+    }
+
+    &--nav {
+      &__link  {
+        color: white;
+      }
+      .active {
+        color: #cddffa;
+        background: #23606e;
+        border-radius: 5px;
+        padding: 5px 10px;
+        font-size: 20px;
+      }
+
+      &__link {
+        padding: 0 20px;
+      }
+
+    }
+
+    select {
+      padding: 10px 20px;
+      border-radius: 8px;
+      background: purple ;
+    }
+
+    &--btn {
+      input {
+        padding: 10px 0;
+        border: 2px solid white;
+        border-radius: 9px;
+        margin: 0 20px;
+      }
+      button {
+        padding: 10px 30px;
+        border-radius: 5px;
+        background: #23606e;
+        transition: .4s;
+        color: white;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+    &--dark {
+     button {
+       margin: 0 10px;
+       font-size: 20px;
+       width: 20px;
+       height: 40px;
+       color: purple;
+       background: none;
+     }
+    }
+  }
+}

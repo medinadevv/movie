@@ -1,0 +1,12 @@
+#video {
+  padding-bottom: 60px;
+  .video {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+
+    &--card {
+      margin: 20px 20px 20px 0;
+    }
+  }
+}
